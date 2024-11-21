@@ -23,6 +23,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <17 13>;
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <18 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
