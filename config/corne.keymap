@@ -34,6 +34,16 @@
             bindings = <&bootloader>;
             key-positions = <18 22>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <14 15>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {
