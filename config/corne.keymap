@@ -21,6 +21,17 @@
             hold-trigger-on-release;
             require-prior-idle-ms = <200>;
         };
+
+        nav: nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Arrow navigation";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <220>;
+        };
     };
 
     combos {
@@ -65,10 +76,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans               &trans                    &trans                &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN    &kp C_VOLUME_UP           &trans                &trans         &trans  &trans
-                        &trans  &trans  &trans    &trans               &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans                     &trans                 &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &nav HOME LEFT_ARROW  &nav PAGE_DOWN DOWN_ARROW  &nav PAGE_UP UP_ARROW  &nav END RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP            &trans                 &trans          &trans  &trans
+                        &trans  &trans  &trans    &trans                &trans                     &trans
             >;
         };
 
