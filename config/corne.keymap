@@ -43,17 +43,17 @@
 
         bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <17 13>;
+            key-positions = <10 14>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 15>;
+            key-positions = <21 22>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <15 16>;
+            key-positions = <22 23>;
         };
     };
 
@@ -62,46 +62,55 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W            &kp E         &kp R              &kp T          &kp Y        &kp U                      &kp I                &kp O            &kp P
-&hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G          &kp H        &hrm LEFT_SHIFT J          &hrm LEFT_CONTROL K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI
-&kp Z            &kp X            &kp C         &kp V              &kp B          &kp N        &kp M                      &kp COMMA            &kp DOT          &kp FSLH
-                                  &kp ESCAPE    &kp TAB            &lt 1 SPACE    &lt 2 ENTER  &nav LEFT_SHIFT BACKSPACE  &kp DELETE
+//    ┌─────────────┬─────────────┬─────────────┬─────────────┬──────────┐   ┌──────────┬────────────────┬─────────────────────┬─────────────┬─────────────┐
+//    │      Q      │      W      │      E      │      R      │    T     │   │    Y     │       U        │          I          │      O      │      P      │
+//    ├─────────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┼─────────────┤
+//    │ &hrm lgui A │ &hrm lalt S │ &hrm lctl D │ &hrm lsft F │    G     │   │    H     │  &hrm lsft J   │ &hrm left_CONTROL K │ &hrm lalt L │ &hrm lgui ; │
+//    ├─────────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┼─────────────┤
+//    │      Z      │      X      │      C      │      V      │    B     │   │    N     │       M        │          ,          │      .      │      /      │
+//    └─────────────┴─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┴─────────────┘
+//                                │     esc     │     tab     │ lt 1 spc │   │ lt 2 ent │ &nav lsft bspc │         del         │
+//                                └─────────────┴─────────────┴──────────┘   └──────────┴────────────────┴─────────────────────┘
+  &kp Q             &kp W             &kp E          &kp R               &kp T             &kp Y         &kp U                       &kp I                 &kp O             &kp P
+  &hrm LEFT_GUI A   &hrm LEFT_ALT S   &hrm LCTRL D   &hrm LEFT_SHIFT F   &kp G             &kp H         &hrm LEFT_SHIFT J           &hrm LEFT_CONTROL K   &hrm LEFT_ALT L   &hrm LEFT_GUI SEMI
+  &kp Z             &kp X             &kp C          &kp V               &kp B             &kp N         &kp M                       &kp COMMA             &kp DOT           &kp FSLH
+                                      &kp ESCAPE     &kp TAB             &lt 1 SPACE       &lt 2 ENTER   &nav LEFT_SHIFT BACKSPACE   &kp DELETE
             >;
         };
 
         lower_layer {
             bindings = <
-&kp EQUAL  &kp N7  &kp N8  &kp N9     &kp SLASH    &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none
-&kp N0     &kp N4  &kp N5  &kp N6     &kp PLUS     &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE   &kp PERCENT
-&trans     &kp N1  &kp N2  &kp N3     &kp MINUS    &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &kp UNDER
-                   &trans  &kp ENTER  &trans       &trans         &trans                &trans
+//    ┌─────────────┬─────────────┬─────────────┬─────────────┬─────┐   ┌─────┬─────────────┬─────────────────────┬─────────────┬─────────────┐
+//    │      =      │      7      │      8      │      9      │  /  │   │  \  │      (      │          )          │      "      │             │
+//    ├─────────────┼─────────────┼─────────────┼─────────────┼─────┤   ├─────┼─────────────┼─────────────────────┼─────────────┼─────────────┤
+//    │ &hrm lgui 0 │ &hrm lalt 4 │ &hrm lctl 5 │ &hrm lsft 6 │  +  │   │  ~  │ &hrm lsft [ │ &hrm left_CONTROL ] │ &hrm lalt ' │ &hrm lgui % │
+//    ├─────────────┼─────────────┼─────────────┼─────────────┼─────┤   ├─────┼─────────────┼─────────────────────┼─────────────┼─────────────┤
+//    │             │      1      │      2      │      3      │  -  │   │  |  │      {      │          }          │      `      │      _      │
+//    └─────────────┴─────────────┼─────────────┼─────────────┼─────┤   ├─────┼─────────────┼─────────────────────┼─────────────┴─────────────┘
+//                                │             │     ent     │     │   │     │             │                     │
+//                                └─────────────┴─────────────┴─────┘   └─────┴─────────────┴─────────────────────┘
+  &kp EQUAL          &kp N7             &kp N8          &kp N9               &kp SLASH       &kp BACKSLASH   &kp LEFT_PARENTHESIS           &kp RIGHT_PARENTHESIS             &kp DOUBLE_QUOTES            &none
+  &hrm LEFT_GUI N0   &hrm LEFT_ALT N4   &hrm LCTRL N5   &hrm LEFT_SHIFT N6   &kp PLUS        &kp TILDE       &hrm LEFT_SHIFT LEFT_BRACKET   &hrm LEFT_CONTROL RIGHT_BRACKET   &hrm LEFT_ALT SINGLE_QUOTE   &hrm LEFT_GUI PERCENT
+  &trans             &kp N1             &kp N2          &kp N3               &kp MINUS       &kp PIPE        &kp LEFT_BRACE                 &kp RIGHT_BRACE                   &kp GRAVE                    &kp UNDER
+                                        &trans          &kp ENTER            &trans          &trans          &trans                         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans                &trans                     &trans                 &trans          &trans
-&trans  &trans  &trans  &trans  &trans    &nav HOME LEFT_ARROW  &nav PAGE_DOWN DOWN_ARROW  &nav PAGE_UP UP_ARROW  &nav END RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP            &trans                 &trans          &trans
-                &trans  &trans  &trans    &trans                &trans                     &trans
-            >;
-        };
-
-        raise_layer {
-            bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-&trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
-&trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE
-                  &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+//    ┌─────┬─────┬─────┬─────┬─────┐   ┌────────────────┬────────────────┬──────────────┬───────────────┬─────┐
+//    │     │     │     │     │     │   │                │                │              │               │     │
+//    ├─────┼─────┼─────┼─────┼─────┤   ├────────────────┼────────────────┼──────────────┼───────────────┼─────┤
+//    │     │     │     │     │     │   │ &nav home left │ &nav pgdn down │ &nav pgup up │ &nav end rght │     │
+//    ├─────┼─────┼─────┼─────┼─────┤   ├────────────────┼────────────────┼──────────────┼───────────────┼─────┤
+//    │     │     │     │     │     │   │      vold      │      volu      │              │               │     │
+//    └─────┴─────┼─────┼─────┼─────┤   ├────────────────┼────────────────┼──────────────┼───────────────┴─────┘
+//                │     │     │     │   │                │                │              │
+//                └─────┴─────┴─────┘   └────────────────┴────────────────┴──────────────┘
+  &trans   &trans   &trans   &trans   &trans       &trans                 &trans                      &trans                  &trans           &trans
+  &trans   &trans   &trans   &trans   &trans       &nav HOME LEFT_ARROW   &nav PAGE_DOWN DOWN_ARROW   &nav PAGE_UP UP_ARROW   &nav END RIGHT   &trans
+  &trans   &trans   &trans   &trans   &trans       &kp C_VOLUME_DOWN      &kp C_VOLUME_UP             &trans                  &trans           &trans
+                    &trans   &trans   &trans       &trans                 &trans                      &trans
             >;
         };
     };
