@@ -65,14 +65,14 @@
 //    ┌─────────────┬─────────────┬─────────────┬─────────────┬──────────┐   ┌──────────┬────────────────┬─────────────────────┬─────────────┬─────────────┐
 //    │      Q      │      W      │      E      │      R      │    T     │   │    Y     │       U        │          I          │      O      │      P      │
 //    ├─────────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┼─────────────┤
-//    │ &hrm lgui A │ &hrm lalt S │ &hrm lctl D │ &hrm lsft F │    G     │   │    H     │  &hrm lsft J   │ &hrm left_CONTROL K │ &hrm lalt L │ &hrm lgui ; │
+//    │ &hrm lgui A │ &hrm lalt S │ &hrm lctl D │ &hrm lsft F │    G     │   │    H     │  &hrm lsft J   │ &hrm lctl K │ &hrm lalt L │ &hrm lgui ; │
 //    ├─────────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┼─────────────┤
 //    │      Z      │      X      │      C      │      V      │    B     │   │    N     │       M        │          ,          │      .      │      /      │
 //    └─────────────┴─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼────────────────┼─────────────────────┼─────────────┴─────────────┘
 //                                │     esc     │     tab     │ lt 1 spc │   │ lt 2 ent │ &nav lsft bspc │         del         │
 //                                └─────────────┴─────────────┴──────────┘   └──────────┴────────────────┴─────────────────────┘
   &kp Q             &kp W             &kp E          &kp R               &kp T             &kp Y         &kp U                       &kp I                 &kp O             &kp P
-  &hrm LEFT_GUI A   &hrm LEFT_ALT S   &hrm LCTRL D   &hrm LEFT_SHIFT F   &kp G             &kp H         &hrm LEFT_SHIFT J           &hrm LEFT_CONTROL K   &hrm LEFT_ALT L   &hrm LEFT_GUI SEMI
+  &hrm LEFT_GUI A   &hrm LEFT_ALT S   &hrm LCTRL D   &hrm LEFT_SHIFT F   &kp G             &kp H         &hrm LEFT_SHIFT J           &hrm LCTRL K   &hrm LEFT_ALT L   &hrm LEFT_GUI SEMI
   &kp Z             &kp X             &kp C          &kp V               &kp B             &kp N         &kp M                       &kp COMMA             &kp DOT           &kp FSLH
                                       &kp ESCAPE     &kp TAB             &lt 1 SPACE       &lt 2 ENTER   &nav LEFT_SHIFT BACKSPACE   &kp DELETE
             >;
@@ -90,7 +90,7 @@
 //                                │             │     ent     │     │   │     │             │                     │
 //                                └─────────────┴─────────────┴─────┘   └─────┴─────────────┴─────────────────────┘
   &kp EQUAL          &kp N7             &kp N8          &kp N9               &kp SLASH       &kp BACKSLASH   &kp LEFT_PARENTHESIS           &kp RIGHT_PARENTHESIS             &kp DOUBLE_QUOTES            &none
-  &hrm LEFT_GUI N0   &hrm LEFT_ALT N4   &hrm LCTRL N5   &hrm LEFT_SHIFT N6   &kp PLUS        &kp TILDE       &hrm LEFT_SHIFT LEFT_BRACKET   &hrm LEFT_CONTROL RIGHT_BRACKET   &hrm LEFT_ALT SINGLE_QUOTE   &hrm LEFT_GUI PERCENT
+  &hrm LEFT_GUI N0   &hrm LEFT_ALT N4   &hrm LCTRL N5   &hrm LEFT_SHIFT N6   &kp PLUS        &kp TILDE       &hrm LEFT_SHIFT LEFT_BRACKET   &hrm LCTRL RIGHT_BRACKET   &hrm LEFT_ALT SINGLE_QUOTE   &hrm LEFT_GUI PERCENT
   &trans             &kp N1             &kp N2          &kp N3               &kp MINUS       &kp PIPE        &kp LEFT_BRACE                 &kp RIGHT_BRACE                   &kp GRAVE                    &kp UNDER
                                         &trans          &kp ENTER            &trans          &trans          &trans                         &trans
             >;
