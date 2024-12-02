@@ -1,0 +1,120 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x5_3}
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: LEFT SHIFT}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LEFT ALT}
+  - {t: ;, h: LEFT GUI}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESCAPE
+  - TAB
+  - {t: SPACE, h: lower}
+  - {t: ENTER, h: '3'}
+  - {t: BACKSPACE, h: LEFT SHIFT}
+  - DELETE
+  lower:
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - \
+  - (
+  - )
+  - '"'
+  - '%'
+  - {t: '0', h: LEFT GUI}
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LCTRL}
+  - {t: '6', h: LEFT SHIFT}
+  - +
+  - '~'
+  - {t: '[', h: LEFT SHIFT}
+  - {t: ']', h: LCTRL}
+  - {t: '''', h: LEFT ALT}
+  - {t: $, h: LEFT GUI}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - '|'
+  - '{'
+  - '}'
+  - '`'
+  - _
+  - {t: ▽, type: trans}
+  - ENTER
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: LEFT ARROW, h: HOME}
+  - {t: DOWN ARROW, h: PAGE DOWN}
+  - {t: UP ARROW, h: PAGE UP}
+  - {t: RIGHT, h: END}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [10, 14]
+  k: '&bootloader'
+- p: [21, 22]
+  k: Ctl+ C
+- p: [22, 23]
+  k: Ctl+ V
