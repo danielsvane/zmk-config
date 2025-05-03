@@ -1,0 +1,8 @@
+config SHIELD_MANICULE36_LEFT
+    def_bool $(shields_list_contains,manicule36_left)
+
+config SHIELD_MANICULE36_RIGHT
+    def_bool $(shields_list_contains,manicule36_right)
+
+config SHIELD_MANICULE36_DONGLE
+    def_bool $(shields_list_contains,manicule36_dongle)

@@ -1,0 +1,10 @@
+file_format: "1"
+id: manicule36
+name: Manicule36
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - manicule36_left
+  - manicule36_right
