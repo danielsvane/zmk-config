@@ -79,6 +79,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <22 23>;
         };
+
+        studio {
+            bindings = <&studio_unlock>;
+            key-positions = <10 19>;
+        };
     };
 
     keymap {
